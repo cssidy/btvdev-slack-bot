@@ -3,6 +3,8 @@ FriendlyReminder: Encouraging inclusive, professional language in Slack environm
 
 ## Built With
 
-* [Node.js]() - The web framework used
-* [BotKit]() - JavaScript library that interfaces with Slack API 
-* [Heroku]() - Hosting platform
+* [Node.js]() - Runtime environment
+* [BotKit]() - JavaScript framework that interfaces with Slack API 
+* [Express.js]() - Node.js web application framework
+* [Heroku]() - Web hosting platform
+* [mLab MongoDB]() - Storage
