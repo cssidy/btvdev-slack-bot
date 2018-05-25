@@ -12,3 +12,5 @@ A chat bot named FriendlyReminder: Encouraging inclusive, professional language 
 ## Installation
 
 Instructions will be added here soon.
+
+*Don't forget your Procfile.*
