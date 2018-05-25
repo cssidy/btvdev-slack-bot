@@ -20,8 +20,10 @@ module.exports = function(controller) {
 
     // reply to a direct mention - @bot hello
     controller.on('direct_mention', function (bot, message) {
-        // reply to _message_ by using the _bot_ object
-        bot.reply(message, 'Whale bot to the rescue!');
+        bot.createConversation(message, function(err, convo) {
+            convo.say('Did someone say my name?');
+            convo.activate();
+        });
     });
 
     controller.hears(['whale','whales', 'baleen'], [ 'ambient' ], function(bot, message) {
@@ -52,12 +54,9 @@ module.exports = function(controller) {
         });
 
 
-        controller.storage.users.get(message.user, function(err, user) {
-            if (user && user.name) {
-                bot.reply(message, 'Hello ' + user.name + '. I\'m watching you.');
-            } else {
-                bot.reply(message, 'Hello. I\'m watching you.');
-            }
+        bot.createConversation(message, function(err, convo) {
+            convo.say('Hello!');
+            convo.activate();
         });
     });
 
@@ -156,9 +155,6 @@ module.exports = function(controller) {
             bot.whisper(message, 'Hello. This message is ephemeral and private between just you and me. I noticed your recent post, where you said: \"' + message.text + '\". The word sucks isn\'t very polite. Maybe we can come up with a better description than that. Please consider editing your post to be more professional and inclusive. Thank you.');
         })
     });
-
-
-
 
 
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
