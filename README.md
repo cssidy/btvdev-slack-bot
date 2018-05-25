@@ -1,5 +1,5 @@
 # btvdev-slack-bot
-FriendlyReminder: Encouraging inclusive, professional language in Slack environments.
+A chat bot named FriendlyReminder: Encouraging inclusive, professional language in Slack environments.
 
 ## Built With
 
