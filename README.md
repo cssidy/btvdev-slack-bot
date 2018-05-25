@@ -3,11 +3,11 @@ A chat bot named FriendlyReminder: Encouraging inclusive, professional language 
 
 ## Built With
 
-* [Node.js]() - Runtime environment
-* [BotKit]() - JavaScript framework that interfaces with Slack API 
-* [Express.js]() - Node.js web application framework
-* [Heroku]() - Web hosting platform
-* [mLab MongoDB]() - Storage
+* Node.js - Runtime environment
+* [BotKit](https://github.com/howdyai/botkit-starter-slack - JavaScript framework that interfaces with Slack API 
+* Express.js - Node.js web application framework
+* [Heroku](https://heroku.com) - Web hosting platform
+* mLab MongoDB - Storage
 
 ## Installation
 
