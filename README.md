@@ -1,6 +1,10 @@
 # btvdev-slack-bot
 A chat bot named FriendlyReminder: Encouraging inclusive, professional language in Slack environments.
 
+## Screenshots
+
+![Screenshot of FriendlyReminder]({{ "/images/slackbot.png" | absolute_url }}) 
+
 ## Built With
 
 * Node.js - Runtime environment
