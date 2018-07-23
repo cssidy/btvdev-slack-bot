@@ -3,7 +3,7 @@ A chat bot named FriendlyReminder: Encouraging inclusive, professional language 
 
 ## Screenshots
 
-[Screenshot of FriendlyReminder]("/images/slackbot.png" | absolute_url) 
+![Screenshot of FriendlyReminder]("/images/slackbot.png") 
 
 ## Built With
 
