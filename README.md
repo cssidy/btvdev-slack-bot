@@ -3,7 +3,7 @@ A chat bot named FriendlyReminder: Encouraging inclusive, professional language 
 
 ## Screenshots
 
-![Screenshot of FriendlyReminder](https://github.com/cssidy/btvdev-slack-bot/images/slackbot.png) 
+![Screenshot of FriendlyReminder](https://github.com/cssidy/btvdev-slack-bot/blob/master/images/slackbot.png) 
 
 ## Built With
 
