@@ -76,7 +76,7 @@ module.exports = function(controller) {
 
     // GUYS
 
-    controller.hears(['^guys$', '^dudes$', '^dude$', '^bro$', '^bros$'], ['ambient'], function(bot, message) {
+    controller.hears(['^guy$', '^guys$', '^dude$', '^dudes$', '^bro$', '^bros$'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". We are not all guys, dudes and bros. Perhaps you meant one of these gender-neutral ways of addressing this group: ' +
                 'team, squad, gang, pals, y\' all, crew, nerds, friends, or comrades. Please consider editing your post to be professional and inclusive. Thank you.');
