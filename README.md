@@ -11,11 +11,25 @@ A chat bot named Friendly Reminder: Encouraging inclusive, professional language
 
 ## Installation
 
-Create an account with Slack API.
+Create a free developer account with Slack API.
 
 Create a new app:
 
 ![Screenshot of Slack step 1](https://github.com/cssidy/btvdev-slack-bot/blob/master/slack-1.png) 
+
+Choose the features and functionality of the app. You will need to select Incoming Webhooks, Bots, Event Subscriptions, and Permissions at the minimum. 
+
+![Screenshot of Slack step 1](https://github.com/cssidy/btvdev-slack-bot/blob/master/slack-2.png) 
+
+Add Friendly Reminder to a Slack group so you can test it:
+
+![Screenshot of Slack step 1](https://github.com/cssidy/btvdev-slack-bot/blob/master/slack-4.png) 
+
+Set up App Credentials. You will need the App ID, Client ID, Client Secret, Signing Secret, and Verification Token. Keep this information private.
+
+Update the display information. Load your bot's avatar and bio here:
+
+![Screenshot of Slack step 1](https://github.com/cssidy/btvdev-slack-bot/blob/master/slack-3.png) 
 
 Create a Heroku account and create a new app with the Free or Hobby (24/7 uptime) plan.
 
