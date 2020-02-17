@@ -17,7 +17,9 @@ A chat bot named Friendly Reminder: Encouraging inclusive, professional language
 
 Create an account with Slack API.
 
-Register your app.
+Create a new app:
+
+![Screenshot of Slack step 1](https://github.com/cssidy/btvdev-slack-bot/blob/master/slack-1.png) 
 
 Create a Heroku account and create a new app with the Free or Hobby (24/7 uptime) plan.
 
