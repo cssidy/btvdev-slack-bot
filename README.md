@@ -1,10 +1,6 @@
 # Friendly Reminder
 A chat bot named Friendly Reminder: Encouraging inclusive, professional language in Slack environments.
 
-## Screenshots
-
-![Screenshot of FriendlyReminder](https://github.com/cssidy/btvdev-slack-bot/blob/master/slackbot.png) 
-
 ## Built With
 
 * Node.js - Runtime environment
