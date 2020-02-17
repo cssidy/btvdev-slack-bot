@@ -56,6 +56,7 @@ Add the remote repo to Git:
 You should see that now as a push option if you check `git remote -v`:
 
 `heroku  https://git.heroku.com/<your app name>.git (fetch)`
+
 `heroku  https://git.heroku.com/<your app name>.git (push)`
 
 Next you will need to set up a couple resources in Heroku. You will need to create two dynos, a web and a worker. The web dyno must be `npm start` and the worker dyno must be `node bot.js`. This will start up your bot on the server and keep it going. This is very important, especially if you are using the Heroku free plan where dynos turn off after 30 minutes of activity. 
