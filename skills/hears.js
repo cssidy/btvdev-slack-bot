@@ -26,14 +26,14 @@ module.exports = function(controller) {
         });
     });
 
-    controller.hears(['\bwhale','\bwhales', '\bbaleen'], [ 'ambient' ], function(bot, message) {
+    controller.hears(['whale','whales', 'baleen'], [ 'ambient' ], function(bot, message) {
         bot.createConversation(message, function(err, convo) {
             convo.say('I\'m a whale!');
             convo.activate();
         });
     });
 
-    controller.hears(['\bbeluga', '\bbelugas'], [ 'ambient' ], function(bot, message) {
+    controller.hears(['beluga', 'belugas'], [ 'ambient' ], function(bot, message) {
         bot.createConversation(message, function(err, convo) {
             convo.say('My uncle was a beluga.');
             convo.activate();
@@ -41,7 +41,7 @@ module.exports = function(controller) {
     });
 
 
-    controller.hears(['\bhello', '\bhi', '\bhowdy', '\bhey'], 'direct_message,direct_mention,mention', function(bot, message) {
+    controller.hears(['hello', 'hi', 'howdy', 'hey'], 'direct_message,direct_mention,mention', function(bot, message) {
 
         bot.api.reactions.add({
             timestamp: message.ts,
@@ -61,7 +61,7 @@ module.exports = function(controller) {
     });
 
 
-    controller.hears(['\buptime', '\bidentify yourself', '\bwho are you', '\bwhat is your name'], 'direct_message,direct_mention,mention', function(bot, message) {
+    controller.hears(['uptime', 'identify yourself', 'who are you', 'what is your name'], 'direct_message,direct_mention,mention', function(bot, message) {
 
         bot.createConversation(message, function(err, convo) {
             if (!err) {
@@ -78,7 +78,7 @@ module.exports = function(controller) {
 
     // GUYS
 
-    controller.hears(['\bguy', '\bguys', '\bdude', '\bdudes', '\bbro', '\bbros'], ['ambient'], function(bot, message) {
+    controller.hears(['guy', 'guys', 'dude', 'dudes', 'bro', 'bros'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". We are not all guys, dudes and bros. Perhaps you meant one of these gender-neutral ways of addressing this group: ' +
                 'team, squad, gang, pals, y\' all, crew, nerds, friends, or comrades. Please consider editing your post to be professional and inclusive. Thank you.');
@@ -92,7 +92,7 @@ module.exports = function(controller) {
 
     // TARD
 
-    controller.hears(['\bretarded', '\bretard', '\btard', '\bherp', '\bderp'], ['ambient'], function(bot, message) {
+    controller.hears(['retarded', 'retard', 'tard', 'herp', 'derp'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". Please be kind when referring to people with disabilities. ' +
                 'I think you meant bad, uninteresting, boring, nonsensical, awful, silly, ridiculous, or illogical. Please consider editing your post to be professional and inclusive. Thank you.');
@@ -106,7 +106,7 @@ module.exports = function(controller) {
 
     // CRAZY
 
-    controller.hears(['\bcrazy', '\binsane'], ['ambient'], function(bot, message) {
+    controller.hears(['crazy', 'insane'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". Crazy and insane aren\'t very nice terms. Maybe you meant bad, illogical, erratic, nonsensical, ' +
                 'ridiculous, uncontrolled, unpredictable, too much, strange, or unusual? Please consider editing your post to be professional and inclusive. Thank you.');
@@ -120,7 +120,7 @@ module.exports = function(controller) {
 
     // LAME
 
-    controller.hears(['\blame'], ['ambient'], function(bot, message) {
+    controller.hears(['lame'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". Lame? Don\'t you think bad, boring, frustrating, a waste of time, tiresome, unoriginal, uncreative, disappointing, embarrassing, or tedious sound better? ' +
                 'Please consider editing your post to be professional and inclusive. Thank you.');
@@ -134,7 +134,7 @@ module.exports = function(controller) {
 
     // DUMB
 
-    controller.hears(['\bdumb', '\bstupid', '\bidiot'], ['ambient'], function(bot, message) {
+    controller.hears(['dumb', 'stupid', 'idiot'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". Saying something or someone is dumb/stupid/an idiot isn\'t very nice. Doesn\'t poorly thought-out, incorrect, ridiculous, unthinkable, silly, or illogical sound a lot better? Please consider editing your post to be professional and inclusive. Thank you.');
 
@@ -146,7 +146,7 @@ module.exports = function(controller) {
 
     // SUCKS
 
-    controller.hears(['\bsucks'], ['ambient'], function(bot, message) {
+    controller.hears(['sucks'], ['ambient'], function(bot, message) {
         bot.startPrivateConversation(message, function(err, dm) {
             dm.say('Hi there. I noticed your recent post, where you said: \"' + message.text + '\". The word sucks isn\'t very polite. Maybe we can come up with a better description than that. Please consider editing your post to be more professional and inclusive. Thank you.');
 
