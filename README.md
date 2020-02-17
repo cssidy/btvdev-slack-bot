@@ -15,6 +15,21 @@ A chat bot named Friendly Reminder: Encouraging inclusive, professional language
 
 ## Installation
 
-Instructions will be added here soon.
+Create an account with Slack API.
 
-*Don't forget your Procfile.*
+Register your app.
+
+Create a Heroku account and create a new app with the Free or Hobby (24/7 uptime) plan.
+
+Clone this repository using Git:
+
+`git clone https://github.com/cssidy/friendly-reminder.git`
+
+Install Node and NPM on your system, then install dependencies.
+
+`npm install`
+
+Update the `.env` file with your tokens. You will need your Slack token from your Slack workspace.
+
+
+
