@@ -1,7 +1,7 @@
 # Friendly Reminder
 A chat bot named Friendly Reminder: Encouraging inclusive, professional language in Slack environments.
 
-Friendly Reminder **sends private, instant messages to Slack members when they type inappropriate language in public channels**. This is a proven method to encourage them to edit their language to be more welcoming to diverse groups.
+Friendly Reminder **sends private, instant messages to Slack members when they type inappropriate language in public channels**. This is a proven method to encourage members to edit their language to be more welcoming to diverse groups.
 
 ## Built With
 
